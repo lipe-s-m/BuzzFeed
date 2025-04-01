@@ -10,6 +10,7 @@
 	/* border: 0.3rem solid salmon; */
 }
 
-.component {
+.component,
+.quiz {
 	width: 100%;
 }

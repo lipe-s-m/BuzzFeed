@@ -1,8 +1,7 @@
 <div class="container">
 	<ul>
-		<li><button class="button-opt">Opçao para Selecionar</button></li>
-		<li><button class="button-opt">Opçao para Selecionar</button></li>
-		<li><button class="button-opt">Opçao para Selecionar</button></li>
-		<li><button class="button-opt">Opçao para Selecionar</button></li>
+		<li *ngFor="let option of options">
+			<button class="button-opt" (click)="nextQuestion(option.alias)">{{option.name}}</button>
+		</li>
 	</ul>
 </div>

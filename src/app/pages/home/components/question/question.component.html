@@ -1,3 +1,4 @@
 <div class="container">
-	<p>Qual poder você escolheria?</p>
+	<!-- <p>{{questionSelected.question}}</p> -->
+	<p *ngIf="questionIndex < 5">{{questionSelected.question}}</p>
 </div>
