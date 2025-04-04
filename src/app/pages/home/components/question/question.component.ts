@@ -6,7 +6,10 @@ import { CommonModule } from '@angular/common';
 	selector: 'app-question',
 	imports: [CommonModule],
 	templateUrl: './question.component.html',
-	styleUrl: './question.component.css',
+	styleUrls: [
+		'./question.component.css',
+		'./question.component.responsive.css',
+	],
 })
 export class QuestionComponent implements OnInit {
 	questions: any = '';

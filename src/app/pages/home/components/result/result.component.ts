@@ -6,7 +6,7 @@ import { count } from 'rxjs';
 	selector: 'app-result',
 	imports: [],
 	templateUrl: './result.component.html',
-	styleUrl: './result.component.css',
+	styleUrls: ['./result.component.css', './result.component.responsive.css'],
 })
 export class ResultComponent implements OnInit {
 	answers: string[] = [];

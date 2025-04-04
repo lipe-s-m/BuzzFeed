@@ -6,7 +6,10 @@ import { CommonModule } from '@angular/common';
 	selector: 'app-options',
 	imports: [CommonModule],
 	templateUrl: './options.component.html',
-	styleUrl: './options.component.css',
+	styleUrls: [
+		'./options.component.css',
+		'./options.component.responsive.css',
+	],
 })
 export class OptionsComponent implements OnInit {
 	answers: string[] = [];

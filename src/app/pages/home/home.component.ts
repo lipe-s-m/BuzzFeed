@@ -16,7 +16,7 @@ import { SharedService } from '../../services/shared.service';
 		CommonModule,
 	],
 	templateUrl: './home.component.html',
-	styleUrl: './home.component.css',
+	styleUrls: ['./home.component.css', './home.component.responsive.css'],
 })
 export class HomeComponent implements OnInit {
 	finished: boolean = false;

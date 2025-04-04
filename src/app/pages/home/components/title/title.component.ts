@@ -5,7 +5,7 @@ import { SharedService } from '../../../../services/shared.service';
 	selector: 'app-title',
 	imports: [],
 	templateUrl: './title.component.html',
-	styleUrl: './title.component.css',
+	styleUrls: ['./title.component.css', './title.component.responsive.css'],
 })
 export class TitleComponent implements OnInit {
 	title: string = '';
