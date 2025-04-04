@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedService } from '../../../../services/shared.service';
 import { CommonModule } from '@angular/common';
 import { QuizzesService } from '../../../../services/quizzes.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
 	selector: 'app-options',
@@ -14,22 +13,31 @@ import { Router } from '@angular/router';
 	],
 })
 export class OptionsComponent implements OnInit {
-	quizzes: any[] = [];
+	idQuiz: number = 0;
+	answers: string[] = [];
 	options: any = '';
 	questionIndex: number = 0;
 	constructor(
 		private quizzesService: QuizzesService,
-		private router: Router
+		private route: ActivatedRoute
 	) {}
 
 	ngOnInit(): void {
+		this.idQuiz = Number(this.route.snapshot.paramMap.get('id'));
+
 		this.quizzesService.currentData.subscribe((data) => {
-			this.quizzes = data.quizzes;
-			console.log(this.quizzes);
+			this.questionIndex = data.questionIndex;
+			this.options =
+				data.quizzes[this.idQuiz].questions[this.questionIndex].options;
 		});
 	}
 
-	nextQuestion(id: number): void {
-		this.router.navigate(['/quiz', id - 1]);
+	nextQuestion(answer: string): void {
+		this.answers.push(answer);
+
+		this.quizzesService.updateData({
+			questionIndex: ++this.questionIndex,
+			answers: this.answers,
+		});
 	}
 }

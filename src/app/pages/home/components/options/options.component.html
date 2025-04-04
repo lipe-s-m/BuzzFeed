@@ -1,7 +1,7 @@
 <div class="container">
 	<ul>
-		<li *ngFor="let option of options">
-			<button class="button-opt" (click)="nextQuestion(option.alias)">{{option.name}}</button>
+		<li *ngFor="let quiz of quizzes">
+			<button class="button-opt" (click)="nextQuestion(quiz.id_quiz)">{{quiz.title}}</button>
 		</li>
 	</ul>
 </div>

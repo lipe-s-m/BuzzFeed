@@ -1,0 +1,154 @@
+{
+	"title": "Qual faculdade combina mais com você?",
+	"questions": [
+		{
+			"id": 1,
+			"question": "O que você mais gosta de fazer no tempo livre?",
+			"options": [
+				{
+					"id": 1,
+					"name": "Ler livros, escrever ou estudar línguas",
+					"alias": "Letras"
+				},
+				{
+					"id": 2,
+					"name": "Resolver problemas ou criar soluções tecnológicas",
+					"alias": "TI"
+				},
+				{
+					"id": 3,
+					"name": "Discutir assuntos sociais, políticos e legais",
+					"alias": "Direito"
+				},
+				{
+					"id": 4,
+					"name": "Ajudar os outros com cuidados de saúde",
+					"alias": "Medicina"
+				},
+				{
+					"id": 5,
+					"name": "Entender o comportamento das pessoas",
+					"alias": "Psicologia"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"question": "Qual dessas frases te representa melhor?",
+			"options": [
+				{ "id": 1, "name": "Palavras têm poder", "alias": "Letras" },
+				{
+					"id": 2,
+					"name": "Sempre penso em como a tecnologia pode melhorar as coisas",
+					"alias": "TI"
+				},
+				{
+					"id": 3,
+					"name": "Luto pelo que é justo",
+					"alias": "Direito"
+				},
+				{
+					"id": 4,
+					"name": "Me preocupo com a saúde das pessoas",
+					"alias": "Medicina"
+				},
+				{
+					"id": 5,
+					"name": "Gosto de ouvir e entender as emoções dos outros",
+					"alias": "Psicologia"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"question": "Como você lida com situações difíceis?",
+			"options": [
+				{
+					"id": 1,
+					"name": "Escrevo sobre o que estou sentindo",
+					"alias": "Letras"
+				},
+				{
+					"id": 2,
+					"name": "Procuro uma solução lógica",
+					"alias": "TI"
+				},
+				{
+					"id": 3,
+					"name": "Busco entender os direitos envolvidos",
+					"alias": "Direito"
+				},
+				{
+					"id": 4,
+					"name": "Ajo rapidamente para ajudar quem precisa",
+					"alias": "Medicina"
+				},
+				{
+					"id": 5,
+					"name": "Reflito sobre as emoções envolvidas",
+					"alias": "Psicologia"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"question": "Qual dessas áreas mais te chama atenção?",
+			"options": [
+				{
+					"id": 1,
+					"name": "Literatura e linguística",
+					"alias": "Letras"
+				},
+				{ "id": 2, "name": "Programação e sistemas", "alias": "TI" },
+				{ "id": 3, "name": "Leis e política", "alias": "Direito" },
+				{
+					"id": 4,
+					"name": "Biologia e corpo humano",
+					"alias": "Medicina"
+				},
+				{
+					"id": 5,
+					"name": "Comportamento humano e mente",
+					"alias": "Psicologia"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"question": "Em um grupo de trabalho, você geralmente é:",
+			"options": [
+				{
+					"id": 1,
+					"name": "Quem escreve e organiza as ideias",
+					"alias": "Letras"
+				},
+				{
+					"id": 2,
+					"name": "Quem resolve os problemas técnicos",
+					"alias": "TI"
+				},
+				{
+					"id": 3,
+					"name": "Quem argumenta e defende as decisões",
+					"alias": "Direito"
+				},
+				{
+					"id": 4,
+					"name": "Quem cuida e se preocupa com todos",
+					"alias": "Medicina"
+				},
+				{
+					"id": 5,
+					"name": "Quem ouve e entende cada pessoa",
+					"alias": "Psicologia"
+				}
+			]
+		}
+	],
+	"results": {
+		"Letras": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil.",
+		"TI": "Você tem raciocínio lógico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação.",
+		"Direito": "Você se importa com justiça e argumentação! Direito parece feito pra você.",
+		"Medicina": "Você nasceu para cuidar! Medicina é a faculdade"
+	}
+}

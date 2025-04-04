@@ -1,11 +1,12 @@
-import { Injectable, OnInit } from '@angular/core';
-import quizz_questions from '../../assets/data/quizz_questions.json';
+import { Injectable } from '@angular/core';
+import quiz from '../../assets/data/quizzes.json';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
 	providedIn: 'root',
 })
 export class SharedService {
+	quizIndex: number = 0;
 	title: string = '';
 	questions: any = '';
 	questionSelected: any = '';
@@ -16,6 +17,7 @@ export class SharedService {
 	finished: boolean = false;
 
 	private quiz = new BehaviorSubject<{
+		quizIndex: number;
 		title: string;
 		questions: any;
 		questionSelected: any;
@@ -25,12 +27,15 @@ export class SharedService {
 		answers: string[];
 		finished: boolean;
 	}>({
-		questions: quizz_questions.questions,
+		quizIndex: 0,
+		questions: quiz.quizzes[this.quizIndex].questions,
 		questionIndex: 0,
-		questionSelected: quizz_questions.questions[this.questionIndex],
-		questionMaxIndex: quizz_questions.questions.length,
-		title: quizz_questions.title,
-		options: quizz_questions.questions[this.questionIndex].options,
+		questionSelected:
+			quiz.quizzes[this.quizIndex].questions[this.questionIndex],
+		questionMaxIndex: quiz.quizzes[this.quizIndex].questions.length,
+		title: quiz.quizzes[this.quizIndex].title,
+		options:
+			quiz.quizzes[this.quizIndex].questions[this.questionIndex].options,
 		answers: [],
 		finished: false,
 	});
@@ -39,12 +44,14 @@ export class SharedService {
 	constructor() {
 		this.questionMaxIndex = this.quiz.getValue().questionMaxIndex;
 		this.questionIndex = this.quiz.getValue().questionIndex;
+		this.quizIndex = this.quiz.getValue().quizIndex;
 		this.options = this.quiz.getValue().options;
 		this.questions = this.quiz.getValue().questions;
 	}
 
 	async updateData(
 		parcialData: Partial<{
+			quizIndex: number;
 			title: string;
 			questions: any;
 			questionSelected: any;
@@ -55,14 +62,20 @@ export class SharedService {
 			finished: boolean;
 		}>
 	) {
-		if (this.questionIndex < this.questionMaxIndex - 1) {
+		if (
+			parcialData.questionIndex &&
+			this.questionIndex < this.questionMaxIndex - 1
+		) {
 			const quizAtual = this.quiz.getValue();
 			const newQuiz = { ...quizAtual, ...parcialData };
 			this.questionIndex += 1;
 			this.quiz.next(newQuiz);
 		}
 		//se for a ultima questao do quiz
-		else if (this.questionIndex >= this.questionMaxIndex - 1) {
+		else if (
+			parcialData.questionIndex &&
+			this.questionIndex >= this.questionMaxIndex - 1
+		) {
 			parcialData.questionIndex = parcialData.questionIndex
 				? parcialData.questionIndex - 1
 				: parcialData.questionIndex;
@@ -70,6 +83,14 @@ export class SharedService {
 			const quizAtual = this.quiz.getValue();
 			const newQuiz = { ...quizAtual, ...parcialData, finished: true };
 			this.quiz.next(newQuiz);
+		}
+		//obter id do quiz
+		else {
+			this.quizIndex = parcialData.quizIndex ? parcialData.quizIndex : 1;
+			const quizAtual = this.quiz.getValue();
+			const newQuiz = { ...quizAtual, quizIndex: this.quizIndex };
+			this.quiz.next(newQuiz);
+			// console.log(this.quiz.getValue());
 		}
 	}
 }

@@ -3,11 +3,7 @@
 		<img src="assets/images/logo.png" alt="Logo">
 	</div>
 
-	<app-result class="component" *ngIf="finished; else elseBlock" />
 
-	<ng-template #elseBlock class="quiz">
-		<app-title class="component" />
-		<app-question class="component" />
-		<app-options class="component" />
-	</ng-template>
+	<app-title class="component" />
+	<app-options class="component" />
 </div>
