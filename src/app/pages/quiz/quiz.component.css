@@ -13,3 +13,26 @@
 .quiz {
 	width: 100%;
 }
+
+.buttonBack {
+	margin: -0.4rem 0;
+	margin-left: 0.4rem;
+	padding: 0.6rem;
+
+	font-size: 2.4rem;
+	font-weight: 400;
+	background-color: transparent;
+	border: none;
+}
+
+.buttonBack:hover {
+	cursor: pointer;
+	color: #78f13b;
+	opacity: 0.8;
+}
+
+hr {
+	width: 90%;
+	margin: 0.2rem 0;
+	opacity: 0.5;
+}

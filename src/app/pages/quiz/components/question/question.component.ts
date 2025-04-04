@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { QuizzesService } from '../../../../services/quizzes.service';
 
 @Component({
-	selector: 'app-question',
+	selector: 'quiz-question',
 	imports: [CommonModule],
 	templateUrl: './question.component.html',
 	styleUrls: [

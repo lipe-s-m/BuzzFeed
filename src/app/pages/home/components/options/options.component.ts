@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { SharedService } from '../../../../services/shared.service';
 import { CommonModule } from '@angular/common';
 import { QuizzesService } from '../../../../services/quizzes.service';
 import { Router } from '@angular/router';
@@ -29,7 +28,7 @@ export class OptionsComponent implements OnInit {
 		});
 	}
 
-	nextQuestion(id: number): void {
+	selectQuiz(id: number): void {
 		this.router.navigate(['/quiz', id - 1]);
 	}
 }

@@ -1,3 +1,22 @@
+@media (max-width: 805px) {
+	.container {
+		height: auto;
+		margin-top: 2rem;
+		padding: 3rem 1.6rem;
+		gap: 1.2rem;
+
+	}
+
+	h1 {
+		font-size: 2.2rem;
+		font-weight: 500;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+	}
+}
+
 @media (max-width: 425px) {
 	.container {
 		height: auto;
@@ -8,7 +27,8 @@
 	}
 
 	h1 {
-		font-size: 3.2rem;
+		font-size: 2.2rem;
+		font-weight: 500;
 	}
 
 	h3 {
@@ -22,7 +42,7 @@
 	}
 
 	h1 {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	h3 {

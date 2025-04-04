@@ -3,11 +3,16 @@
 		<img src="assets/images/logo.png" alt="Logo">
 	</div>
 
-	<app-result class="component" *ngIf="finished; else elseBlock" />
+	<hr>
+	<quiz-result class="component" *ngIf="finished; else elseBlock" />
 
 	<ng-template #elseBlock class="quiz">
-		<app-title class="component" />
-		<app-question class="component" />
-		<app-options class="component" />
+
+		<quiz-title class="component" />
+		<quiz-question class="component" />
+		<quiz-options class="component" />
 	</ng-template>
+	<hr>
+	<button class="buttonBack" (click)="backToHome()"><- Voltar para a Home</button>
+
 </div>

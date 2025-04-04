@@ -4,8 +4,7 @@ import { QuestionComponent } from './components/question/question.component';
 import { OptionsComponent } from './components/options/options.component';
 import { ResultComponent } from './components/result/result.component';
 import { CommonModule } from '@angular/common';
-import { SharedService } from '../../services/shared.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { QuizzesService } from '../../services/quizzes.service';
 
 @Component({
@@ -25,7 +24,8 @@ export class QuizComponent implements OnInit {
 	idQuiz: number = 0;
 	constructor(
 		private quizzesService: QuizzesService,
-		private route: ActivatedRoute
+		private route: ActivatedRoute,
+		private router: Router
 	) {}
 
 	ngOnInit(): void {
@@ -33,5 +33,9 @@ export class QuizComponent implements OnInit {
 		this.quizzesService.currentData.subscribe((data) => {
 			this.finished = data.finished;
 		});
+	}
+	backToHome(): void {
+		this.quizzesService.resetarQuiz();
+		this.router.navigate(['']);
 	}
 }

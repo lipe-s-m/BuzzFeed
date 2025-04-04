@@ -2,11 +2,11 @@
 	"quizzes": [
 		{
 			"id_quiz": 1,
-			"title": "Você seria um heroi ou vilão ?",
+			"title": "Você seria um heroi ou vilão?",
 			"questions": [
 				{
 					"id": 1,
-					"question": "Qual super poder você escolheria ?",
+					"question": "Qual super poder você escolheria?",
 					"options": [
 						{ "id": 1, "name": "Raios-Lasers", "alias": "A" },
 						{ "id": 2, "name": "Voar", "alias": "B" },
@@ -21,7 +21,7 @@
 				},
 				{
 					"id": 2,
-					"question": "Quem você salvaria primeiro ?",
+					"question": "Quem você salvaria primeiro?",
 					"options": [
 						{ "id": 1, "name": "Crianças", "alias": "A" },
 						{ "id": 2, "name": "Idosos", "alias": "A" },
@@ -34,7 +34,7 @@
 				},
 				{
 					"id": 3,
-					"question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+					"question": "Qual a sua maior preocupação ao enfretar outro super ser?",
 					"options": [
 						{
 							"id": 1,
@@ -60,7 +60,7 @@
 				},
 				{
 					"id": 4,
-					"question": "Qual o seu maior foco ?",
+					"question": "Qual o seu maior foco?",
 					"options": [
 						{
 							"id": 1,
@@ -72,17 +72,23 @@
 				},
 				{
 					"id": 5,
-					"question": "Qual o seu apelido de super ser ?",
+					"question": "Qual o seu apelido de super ser?",
 					"options": [
 						{ "id": 1, "name": "O Terrivel", "alias": "A" },
 						{ "id": 2, "name": "Amigo da vizinhança", "alias": "B" }
 					]
 				}
 			],
-			"results": {
-				"A": "Você muito provavelmente seria um super vilão!",
-				"B": "Você muito provavelmente seria um super Herói!"
-			}
+			"results": [
+				{
+					"result": "Super Vilão",
+					"result_text": "Você muito provavelmente seria um super Vilão!"
+				},
+				{
+					"result": "Super Herói",
+					"result_text": "Você muito provavelmente seria um super Herói!"
+				}
+			]
 		},
 
 		{
@@ -96,31 +102,27 @@
 						{
 							"id": 1,
 							"name": "Ler livros, escrever ou estudar línguas",
-							"alias": "A",
-							"resultado": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil."
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Resolver problemas ou criar soluções tecnológicas",
-							"alias": "B",
-							"resultado": "Você tem raciocínio logico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação"
+							"alias": "B"
 						},
 						{
 							"id": 3,
 							"name": "Discutir assuntos sociais, políticos e legais",
-							"alias": "C",
-							"resultado": "Você se importa com justiça e argumentação! Direito parece feito pra você."
+							"alias": "C"
 						},
 						{
 							"id": 4,
 							"name": "Ajudar os outros com cuidados de saúde",
-							"alias": "D",
-							"resultado": "Você nasceu pra cuidar de vidas! Medicina é sua faculdade ideal."
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Entender o comportamento das pessoas",
-							"alias": "Psicologia"
+							"alias": "E"
 						}
 					]
 				},
@@ -131,31 +133,27 @@
 						{
 							"id": 1,
 							"name": "Palavras têm poder",
-							"alias": "A",
-							"resultado": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil."
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Sempre penso em como a tecnologia pode melhorar as coisas",
-							"alias": "B",
-							"resultado": "Você tem raciocínio logico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação"
+							"alias": "B"
 						},
 						{
 							"id": 3,
 							"name": "Luto pelo que é justo",
-							"alias": "C",
-							"resultado": "Você se importa com justiça e argumentação! Direito parece feito pra você."
+							"alias": "C"
 						},
 						{
 							"id": 4,
 							"name": "Me preocupo com a saúde das pessoas",
-							"alias": "D",
-							"resultado": "Você nasceu pra cuidar de vidas! Medicina é sua faculdade ideal."
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Gosto de ouvir e entender as emoções dos outros",
-							"alias": "Psicologia"
+							"alias": "E"
 						}
 					]
 				},
@@ -166,31 +164,27 @@
 						{
 							"id": 1,
 							"name": "Escrevo sobre o que estou sentindo",
-							"alias": "A",
-							"resultado": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil."
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Procuro uma solução lógica",
-							"alias": "B",
-							"resultado": "Você tem raciocínio logico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação"
+							"alias": "B"
 						},
 						{
 							"id": 3,
 							"name": "Busco entender os direitos envolvidos",
-							"alias": "C",
-							"resultado": "Você se importa com justiça e argumentação! Direito parece feito pra você."
+							"alias": "C"
 						},
 						{
 							"id": 4,
 							"name": "Ajo rapidamente para ajudar quem precisa",
-							"alias": "D",
-							"resultado": "Você nasceu pra cuidar de vidas! Medicina é sua faculdade ideal."
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Reflito sobre as emoções envolvidas",
-							"alias": "Psicologia"
+							"alias": "E"
 						}
 					]
 				},
@@ -201,31 +195,27 @@
 						{
 							"id": 1,
 							"name": "Literatura e linguística",
-							"alias": "A",
-							"resultado": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil."
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Programação e sistemas",
-							"alias": "B",
-							"resultado": "Você tem raciocínio logico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação"
+							"alias": "B"
 						},
 						{
 							"id": 3,
 							"name": "Leis e política",
-							"alias": "C",
-							"resultado": "Você se importa com justiça e argumentação! Direito parece feito pra você."
+							"alias": "C"
 						},
 						{
 							"id": 4,
 							"name": "Biologia e corpo humano",
-							"alias": "D",
-							"resultado": "Você nasceu pra cuidar de vidas! Medicina é sua faculdade ideal."
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Comportamento humano e mente",
-							"alias": "Psicologia"
+							"alias": "E"
 						}
 					]
 				},
@@ -236,41 +226,53 @@
 						{
 							"id": 1,
 							"name": "Quem escreve e organiza as ideias",
-							"alias": "A",
-							"resultado": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil."
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Quem resolve os problemas técnicos",
-							"alias": "B",
-							"resultado": "Você tem raciocínio logico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação"
+							"alias": "B"
 						},
 						{
 							"id": 3,
 							"name": "Quem argumenta e defende as decisões",
-							"alias": "C",
-							"resultado": "Você se importa com justiça e argumentação! Direito parece feito pra você."
+							"alias": "C"
 						},
 						{
 							"id": 4,
 							"name": "Quem cuida e se preocupa com todos",
-							"alias": "D",
-							"resultado": "Você nasceu pra cuidar de vidas! Medicina é sua faculdade ideal."
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Quem ouve e entende cada pessoa",
-							"alias": "Psicologia"
+							"alias": "E"
 						}
 					]
 				}
 			],
-			"results": {
-				"Letras": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil.",
-				"TI": "Você tem raciocínio lógico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação.",
-				"Direito": "Você se importa com justiça e argumentação! Direito parece feito pra você.",
-				"Medicina": "Você nasceu para cuidar! Medicina é a faculdade"
-			}
+			"results": [
+				{
+					"result": "Letras",
+					"result_text": "Você tem alma de comunicador! A faculdade de Letras combina perfeitamente com seu perfil."
+				},
+				{
+					"result": "TI",
+					"result_text": "Você tem raciocínio lógico e ama tecnologia! A faculdade ideal pra você é a de Tecnologia da Informação."
+				},
+				{
+					"result": "Direito",
+					"result_text": "Você se importa com justiça e argumentação! Direito parece feito pra você."
+				},
+				{
+					"result": "Medicina",
+					"result_text": "Você nasceu para salvar vidas! Medicina é a faculdade"
+				},
+				{
+					"result": "Psicologia",
+					"result_text": "Você se importa com oque as pessoas sentem e tenta ajuda-las! Psicologia é a faculdade"
+				}
+			]
 		},
 		{
 			"id_quiz": 3,
@@ -280,11 +282,11 @@
 					"id": 1,
 					"question": "Qual dessas palavras mais te define?",
 					"options": [
-						{ "id": 1, "name": "Intenso", "alias": "Rock" },
-						{ "id": 2, "name": "Romântico", "alias": "Sertanejo" },
-						{ "id": 3, "name": "Animado", "alias": "Pop" },
-						{ "id": 4, "name": "Profundo", "alias": "Rap" },
-						{ "id": 5, "name": "Inspirado", "alias": "Gospel" }
+						{ "id": 1, "name": "Intenso", "alias": "A" },
+						{ "id": 2, "name": "Romântico", "alias": "B" },
+						{ "id": 3, "name": "Animado", "alias": "C" },
+						{ "id": 4, "name": "Profundo", "alias": "D" },
+						{ "id": 5, "name": "Inspirado", "alias": "E" }
 					]
 				},
 				{
@@ -294,27 +296,27 @@
 						{
 							"id": 1,
 							"name": "Prefiro gritar minha verdade",
-							"alias": "Rock"
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Amo um bom refrão chiclete",
-							"alias": "Pop"
+							"alias": "C"
 						},
 						{
 							"id": 3,
 							"name": "Nada como uma letra que emociona",
-							"alias": "Sertanejo"
+							"alias": "B"
 						},
 						{
 							"id": 4,
 							"name": "Rimo com a realidade",
-							"alias": "Rap"
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Louvo mesmo no meio da tempestade",
-							"alias": "Gospel"
+							"alias": "E"
 						}
 					]
 				},
@@ -325,23 +327,23 @@
 						{
 							"id": 1,
 							"name": "Enfrento com intensidade",
-							"alias": "Rock"
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Busco consolo em Deus",
-							"alias": "Gospel"
+							"alias": "E"
 						},
-						{ "id": 3, "name": "Levo com leveza", "alias": "Pop" },
+						{ "id": 3, "name": "Levo com leveza", "alias": "C" },
 						{
 							"id": 4,
 							"name": "Escrevo ou desabafo",
-							"alias": "Rap"
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Ligo pra alguém especial",
-							"alias": "Sertanejo"
+							"alias": "B"
 						}
 					]
 				},
@@ -349,11 +351,11 @@
 					"id": 4,
 					"question": "Você se considera mais:",
 					"options": [
-						{ "id": 1, "name": "Rebelde", "alias": "Rock" },
-						{ "id": 2, "name": "Amoroso", "alias": "Sertanejo" },
-						{ "id": 3, "name": "Popular", "alias": "Pop" },
-						{ "id": 4, "name": "Reflexivo", "alias": "Rap" },
-						{ "id": 5, "name": "Espiritual", "alias": "Gospel" }
+						{ "id": 1, "name": "Rebelde", "alias": "A" },
+						{ "id": 2, "name": "Amoroso", "alias": "B" },
+						{ "id": 3, "name": "Popular", "alias": "C" },
+						{ "id": 4, "name": "Reflexivo", "alias": "D" },
+						{ "id": 5, "name": "Espiritual", "alias": "E" }
 					]
 				},
 				{
@@ -363,38 +365,53 @@
 						{
 							"id": 1,
 							"name": "Mosh pit e guitarras",
-							"alias": "Rock"
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Balões e fogos coloridos",
-							"alias": "Pop"
+							"alias": "C"
 						},
 						{
 							"id": 3,
 							"name": "Show no campo com violas",
-							"alias": "Sertanejo"
+							"alias": "B"
 						},
 						{
 							"id": 4,
 							"name": "Microfone e rimas no palco",
-							"alias": "Rap"
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Louvor e adoração",
-							"alias": "Gospel"
+							"alias": "E"
 						}
 					]
 				}
 			],
-			"results": {
-				"Rock": "Você é puro Rock! Intenso, autêntico e cheio de atitude.",
-				"Pop": "Você tem a vibe do Pop! Alegre, carismático e cheio de energia.",
-				"Sertanejo": "Você tem alma sertaneja! Romântico, caloroso e leal.",
-				"Rap": "Você é do Rap! Profundo, consciente e cheio de estilo.",
-				"Gospel": "Você é do Gospel! Conectado com o espiritual e com o coração cheio de fé."
-			}
+			"results": [
+				{
+					"result": "Rock",
+					"result_text": "Você é puro Rock! Intenso, autêntico e cheio de atitude."
+				},
+				{
+					"result": "Pop",
+					"result_text": "Você tem a vibe do Pop! Alegre, carismático e cheio de energia."
+				},
+				{
+					"result": "Sertanejo",
+					"result_text": "Você tem alma sertaneja! Romântico, caloroso e leal."
+				},
+				{
+					"result": "Rap",
+					"result_text": "Você é do Rap! Profundo, consciente e cheio de estilo."
+				},
+				{
+					"result": "Gospel",
+					"result_text": "Você é do Gospel! Conectado com o espiritual e com o coração cheio de fé."
+				}
+			]
 		},
 		{
 			"id_quiz": 4,
@@ -404,150 +421,94 @@
 					"id": 1,
 					"question": "O que mais te representa?",
 					"options": [
-						{
-							"id": 1,
-							"name": "Tecnologia",
-							"alias": "Homem de Ferro"
-						},
-						{
-							"id": 2,
-							"name": "Lealdade",
-							"alias": "Capitão América"
-						},
-						{
-							"id": 3,
-							"name": "Discrição",
-							"alias": "Viúva Negra"
-						},
-						{ "id": 4, "name": "Força", "alias": "Hulk" },
-						{
-							"id": 5,
-							"name": "Misticismo",
-							"alias": "Doutor Estranho"
-						}
+						{ "id": 1, "name": "Tecnologia", "alias": "A" },
+						{ "id": 2, "name": "Lealdade", "alias": "B" },
+						{ "id": 3, "name": "Discrição", "alias": "C" },
+						{ "id": 4, "name": "Força", "alias": "D" },
+						{ "id": 5, "name": "Misticismo", "alias": "E" }
 					]
 				},
 				{
 					"id": 2,
 					"question": "Se tivesse um poder, qual escolheria?",
 					"options": [
-						{ "id": 1, "name": "Super força", "alias": "Hulk" },
-						{
-							"id": 2,
-							"name": "Armadura de ferro",
-							"alias": "Homem de Ferro"
-						},
+						{ "id": 1, "name": "Super força", "alias": "A" },
+						{ "id": 2, "name": "Armadura de ferro", "alias": "B" },
 						{
 							"id": 3,
 							"name": "Escudo indestrutível",
-							"alias": "Capitão América"
+							"alias": "C"
 						},
-						{
-							"id": 4,
-							"name": "Invisibilidade",
-							"alias": "Viúva Negra"
-						},
-						{
-							"id": 5,
-							"name": "Magia e portais",
-							"alias": "Doutor Estranho"
-						}
+						{ "id": 4, "name": "Invisibilidade", "alias": "D" },
+						{ "id": 5, "name": "Magia e portais", "alias": "E" }
 					]
 				},
 				{
 					"id": 3,
 					"question": "Você é mais:",
 					"options": [
-						{
-							"id": 1,
-							"name": "Lógico",
-							"alias": "Homem de Ferro"
-						},
-						{
-							"id": 2,
-							"name": "Justo",
-							"alias": "Capitão América"
-						},
-						{
-							"id": 3,
-							"name": "Calculista",
-							"alias": "Viúva Negra"
-						},
-						{ "id": 4, "name": "Explosivo", "alias": "Hulk" },
-						{
-							"id": 5,
-							"name": "Enigmático",
-							"alias": "Doutor Estranho"
-						}
+						{ "id": 1, "name": "Lógico", "alias": "A" },
+						{ "id": 2, "name": "Justo", "alias": "B" },
+						{ "id": 3, "name": "Calculista", "alias": "C" },
+						{ "id": 4, "name": "Explosivo", "alias": "D" },
+						{ "id": 5, "name": "Enigmático", "alias": "E" }
 					]
 				},
 				{
 					"id": 4,
 					"question": "No time, você seria o...",
 					"options": [
-						{
-							"id": 1,
-							"name": "Líder natural",
-							"alias": "Capitão América"
-						},
-						{
-							"id": 2,
-							"name": "Cérebro das ideias",
-							"alias": "Homem de Ferro"
-						},
+						{ "id": 1, "name": "Líder natural", "alias": "A" },
+						{ "id": 2, "name": "Cérebro das ideias", "alias": "B" },
 						{
 							"id": 3,
 							"name": "A infiltrada estratégica",
-							"alias": "Viúva Negra"
+							"alias": "C"
 						},
 						{
 							"id": 4,
 							"name": "Tanque da pancadaria",
-							"alias": "Hulk"
+							"alias": "D"
 						},
-						{
-							"id": 5,
-							"name": "O plano B mágico",
-							"alias": "Doutor Estranho"
-						}
+						{ "id": 5, "name": "O plano B mágico", "alias": "E" }
 					]
 				},
 				{
 					"id": 5,
 					"question": "Com quem você mais se parece?",
 					"options": [
-						{
-							"id": 1,
-							"name": "Tony Stark",
-							"alias": "Homem de Ferro"
-						},
-						{
-							"id": 2,
-							"name": "Steve Rogers",
-							"alias": "Capitão América"
-						},
-						{
-							"id": 3,
-							"name": "Natasha Romanoff",
-							"alias": "Viúva Negra"
-						},
-						{ "id": 4, "name": "Bruce Banner", "alias": "Hulk" },
-						{
-							"id": 5,
-							"name": "Stephen Strange",
-							"alias": "Doutor Estranho"
-						}
+						{ "id": 1, "name": "Tony Stark", "alias": "A" },
+						{ "id": 2, "name": "Steve Rogers", "alias": "B" },
+						{ "id": 3, "name": "Natasha Romanoff", "alias": "C" },
+						{ "id": 4, "name": "Bruce Banner", "alias": "D" },
+						{ "id": 5, "name": "Stephen Strange", "alias": "E" }
 					]
 				}
 			],
-			"results": {
-				"Homem de Ferro": "Você é o Homem de Ferro! Brilhante, sarcástico e sempre pronto.",
-				"Capitão América": "Você é o Capitão América! Honrado, fiel e com espírito de liderança.",
-				"Viúva Negra": "Você é a Viúva Negra! Discreta, esperta e letal.",
-				"Hulk": "Você é o Hulk! Forte, emotivo e cheio de intensidade.",
-				"Doutor Estranho": "Você é o Doutor Estranho! Misterioso, sábio e um verdadeiro guardião."
-			}
+			"results": [
+				{
+					"result": "Homem de Ferro",
+					"result_text": "Você é o Homem de Ferro! Brilhante, sarcástico e sempre pronto."
+				},
+				{
+					"result": "Capitão América",
+					"result_text": "Você é o Capitão América! Honrado, fiel e com espírito de liderança."
+				},
+				{
+					"result": "Viúva Negra",
+					"result_text": "Você é a Viúva Negra! Discreta, esperta e letal."
+				},
+				{
+					"result": "Hulk",
+					"result_text": "Você é o Hulk! Forte, emotivo e cheio de intensidade."
+				},
+				{
+					"result": "Doutor Estranho",
+					"result_text": "Você é o Doutor Estranho! Misterioso, sábio e um verdadeiro guardião."
+				}
+			]
 		},
+
 		{
 			"id_quiz": 5,
 			"title": "Qual personagem de Naruto é mais parecido com você?",
@@ -556,30 +517,14 @@
 					"id": 1,
 					"question": "Qual seu maior valor?",
 					"options": [
-						{
-							"id": 1,
-							"name": "Nunca desistir",
-							"alias": "Naruto"
-						},
-						{
-							"id": 2,
-							"name": "Poder e vingança",
-							"alias": "Sasuke"
-						},
-						{
-							"id": 3,
-							"name": "Mudança e redenção",
-							"alias": "Obito"
-						},
-						{
-							"id": 4,
-							"name": "Trabalho duro",
-							"alias": "Rock Lee"
-						},
+						{ "id": 1, "name": "Nunca desistir", "alias": "A" },
+						{ "id": 2, "name": "Poder e vingança", "alias": "B" },
+						{ "id": 3, "name": "Mudança e redenção", "alias": "C" },
+						{ "id": 4, "name": "Trabalho duro", "alias": "D" },
 						{
 							"id": 5,
 							"name": "Inteligência e lógica",
-							"alias": "Shikamaru"
+							"alias": "E"
 						}
 					]
 				},
@@ -590,27 +535,27 @@
 						{
 							"id": 1,
 							"name": "Acredito no poder da amizade!",
-							"alias": "Naruto"
+							"alias": "A"
 						},
 						{
 							"id": 2,
 							"name": "Só quem conhece a dor pode alcançar a verdadeira paz.",
-							"alias": "Sasuke"
+							"alias": "B"
 						},
 						{
 							"id": 3,
 							"name": "Eu era alguém diferente antes...",
-							"alias": "Obito"
+							"alias": "C"
 						},
 						{
 							"id": 4,
 							"name": "Não tenho talento, mas nunca vou parar.",
-							"alias": "Rock Lee"
+							"alias": "D"
 						},
 						{
 							"id": 5,
 							"name": "Que saco... mas vou fazer do meu jeito.",
-							"alias": "Shikamaru"
+							"alias": "E"
 						}
 					]
 				},
@@ -618,56 +563,60 @@
 					"id": 3,
 					"question": "O que te move?",
 					"options": [
-						{ "id": 1, "name": "Sonhos", "alias": "Naruto" },
-						{ "id": 2, "name": "Traumas", "alias": "Sasuke" },
-						{ "id": 3, "name": "Arrependimento", "alias": "Obito" },
-						{ "id": 4, "name": "Superação", "alias": "Rock Lee" },
-						{ "id": 5, "name": "Estratégia", "alias": "Shikamaru" }
+						{ "id": 1, "name": "Sonhos", "alias": "A" },
+						{ "id": 2, "name": "Traumas", "alias": "B" },
+						{ "id": 3, "name": "Arrependimento", "alias": "C" },
+						{ "id": 4, "name": "Superação", "alias": "D" },
+						{ "id": 5, "name": "Estratégia", "alias": "E" }
 					]
 				},
 				{
 					"id": 4,
 					"question": "Seu estilo de luta seria...",
 					"options": [
-						{ "id": 1, "name": "Rasengan!", "alias": "Naruto" },
-						{ "id": 2, "name": "Chidori", "alias": "Sasuke" },
-						{
-							"id": 3,
-							"name": "Kamui e ilusões",
-							"alias": "Obito"
-						},
-						{
-							"id": 4,
-							"name": "Taijutsu puro",
-							"alias": "Rock Lee"
-						},
-						{
-							"id": 5,
-							"name": "Planejamento ninja",
-							"alias": "Shikamaru"
-						}
+						{ "id": 1, "name": "Rasengan!", "alias": "A" },
+						{ "id": 2, "name": "Chidori", "alias": "B" },
+						{ "id": 3, "name": "Kamui e ilusões", "alias": "C" },
+						{ "id": 4, "name": "Taijutsu puro", "alias": "D" },
+						{ "id": 5, "name": "Planejamento ninja", "alias": "E" }
 					]
 				},
 				{
 					"id": 5,
 					"question": "Como se descreveria em uma palavra?",
 					"options": [
-						{ "id": 1, "name": "Determinado", "alias": "Naruto" },
-						{ "id": 2, "name": "Solitário", "alias": "Sasuke" },
-						{ "id": 3, "name": "Complexo", "alias": "Obito" },
-						{ "id": 4, "name": "Resiliente", "alias": "Rock Lee" },
-						{ "id": 5, "name": "Genial", "alias": "Shikamaru" }
+						{ "id": 1, "name": "Determinado", "alias": "A" },
+						{ "id": 2, "name": "Solitário", "alias": "B" },
+						{ "id": 3, "name": "Complexo", "alias": "C" },
+						{ "id": 4, "name": "Resiliente", "alias": "D" },
+						{ "id": 5, "name": "Genial", "alias": "E" }
 					]
 				}
 			],
-			"results": {
-				"Naruto": "Você é como o Naruto! Persistente, alegre e movido por sonhos.",
-				"Sasuke": "Você é como o Sasuke! Reservado, poderoso e determinado.",
-				"Obito": "Você é como o Obito! Misterioso, intenso e em busca de redenção.",
-				"Rock Lee": "Você é como o Rock Lee! Esforçado, leal e incansável.",
-				"Shikamaru": "Você é como o Shikamaru! Estratégico, calmo e extremamente inteligente."
-			}
+			"results": [
+				{
+					"result": "Naruto",
+					"result_text": "Você é como o Naruto! Persistente, alegre e movido por sonhos."
+				},
+				{
+					"result": "Sasuke",
+					"result_text": "Você é como o Sasuke! Reservado, poderoso e determinado."
+				},
+				{
+					"result": "Obito",
+					"result_text": "Você é como o Obito! Misterioso, intenso e em busca de redenção."
+				},
+				{
+					"result": "Rock Lee",
+					"result_text": "Você é como o Rock Lee! Esforçado, leal e incansável."
+				},
+				{
+					"result": "Shikamaru",
+					"result_text": "Você é como o Shikamaru! Estratégico, calmo e extremamente inteligente."
+				}
+			]
 		},
+
 		{
 			"id_quiz": 6,
 			"title": "Qual estação do ano representa você?",
@@ -676,83 +625,51 @@
 					"id": 1,
 					"question": "Qual seu humor mais frequente?",
 					"options": [
-						{ "id": 1, "name": "Radiante", "alias": "Verão" },
-						{ "id": 2, "name": "Reflexivo", "alias": "Outono" },
-						{ "id": 3, "name": "Calmo", "alias": "Inverno" },
-						{ "id": 4, "name": "Esperançoso", "alias": "Primavera" }
+						{ "id": 1, "name": "Radiante", "alias": "A" },
+						{ "id": 2, "name": "Reflexivo", "alias": "B" },
+						{ "id": 3, "name": "Calmo", "alias": "C" },
+						{ "id": 4, "name": "Esperançoso", "alias": "D" }
 					]
 				},
 				{
 					"id": 2,
 					"question": "Você prefere...",
 					"options": [
-						{ "id": 1, "name": "Sol e calor", "alias": "Verão" },
+						{ "id": 1, "name": "Sol e calor", "alias": "A" },
 						{
 							"id": 2,
 							"name": "Folhas caindo e vento",
-							"alias": "Outono"
+							"alias": "B"
 						},
-						{
-							"id": 3,
-							"name": "Frio e cobertor",
-							"alias": "Inverno"
-						},
-						{
-							"id": 4,
-							"name": "Flores e renovação",
-							"alias": "Primavera"
-						}
+						{ "id": 3, "name": "Frio e cobertor", "alias": "C" },
+						{ "id": 4, "name": "Flores e renovação", "alias": "D" }
 					]
 				},
 				{
 					"id": 3,
 					"question": "Seu estilo é mais...",
 					"options": [
-						{
-							"id": 1,
-							"name": "Colorido e ousado",
-							"alias": "Verão"
-						},
-						{
-							"id": 2,
-							"name": "Terroso e discreto",
-							"alias": "Outono"
-						},
+						{ "id": 1, "name": "Colorido e ousado", "alias": "A" },
+						{ "id": 2, "name": "Terroso e discreto", "alias": "B" },
 						{
 							"id": 3,
 							"name": "Chique e minimalista",
-							"alias": "Inverno"
+							"alias": "C"
 						},
-						{
-							"id": 4,
-							"name": "Leve e romântico",
-							"alias": "Primavera"
-						}
+						{ "id": 4, "name": "Leve e romântico", "alias": "D" }
 					]
 				},
 				{
 					"id": 4,
 					"question": "Você prefere sair para...",
 					"options": [
-						{
-							"id": 1,
-							"name": "Praia ou piscina",
-							"alias": "Verão"
-						},
-						{
-							"id": 2,
-							"name": "Caminhar e pensar",
-							"alias": "Outono"
-						},
-						{
-							"id": 3,
-							"name": "Ficar em casa",
-							"alias": "Inverno"
-						},
+						{ "id": 1, "name": "Praia ou piscina", "alias": "A" },
+						{ "id": 2, "name": "Caminhar e pensar", "alias": "B" },
+						{ "id": 3, "name": "Ficar em casa", "alias": "C" },
 						{
 							"id": 4,
 							"name": "Piquenique ao ar livre",
-							"alias": "Primavera"
+							"alias": "D"
 						}
 					]
 				},
@@ -760,19 +677,31 @@
 					"id": 5,
 					"question": "Você é mais...",
 					"options": [
-						{ "id": 1, "name": "Extrovertido", "alias": "Verão" },
-						{ "id": 2, "name": "Introvertido", "alias": "Inverno" },
-						{ "id": 3, "name": "Equilibrado", "alias": "Outono" },
-						{ "id": 4, "name": "Sonhador", "alias": "Primavera" }
+						{ "id": 1, "name": "Extrovertido", "alias": "A" },
+						{ "id": 2, "name": "Introvertido", "alias": "B" },
+						{ "id": 3, "name": "Equilibrado", "alias": "C" },
+						{ "id": 4, "name": "Sonhador", "alias": "D" }
 					]
 				}
 			],
-			"results": {
-				"Verão": "Você é como o Verão! Intenso, alegre e cheio de energia.",
-				"Outono": "Você é como o Outono! Maduro, tranquilo e introspectivo.",
-				"Inverno": "Você é como o Inverno! Reservado, sensível e elegante.",
-				"Primavera": "Você é como a Primavera! Sonhador, romântico e renovador."
-			}
+			"results": [
+				{
+					"result": "Verão",
+					"result_text": "Você é como o Verão! Intenso, alegre e cheio de energia."
+				},
+				{
+					"result": "Outono",
+					"result_text": "Você é como o Outono! Maduro, tranquilo e introspectivo."
+				},
+				{
+					"result": "Inverno",
+					"result_text": "Você é como o Inverno! Reservado, sensível e elegante."
+				},
+				{
+					"result": "Primavera",
+					"result_text": "Você é como a Primavera! Sonhador, romântico e renovador."
+				}
+			]
 		}
 	]
 }

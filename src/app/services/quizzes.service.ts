@@ -34,6 +34,19 @@ export class QuizzesService {
 
 	currentData = this.quizzes.asObservable();
 
+	resetarQuiz() {
+		this.questionIndex = 0;
+		const quizAtual = this.quizzes.getValue();
+		const newQuiz = {
+			...quizAtual,
+			answers: [],
+			questionIndex: 0,
+			finished: false,
+		};
+		this.quizzes.next(newQuiz);
+		console.log(newQuiz);
+	}
+
 	async updateData(
 		parcialData: Partial<{
 			quizIndex: number;

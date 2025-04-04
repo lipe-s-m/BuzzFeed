@@ -12,6 +12,17 @@
 	}
 }
 
+@media (max-width: 425px) {
+
+
+	.container {
+
+		width: 98%;
+		gap: 1.2rem;
+		padding: 0.6rem 1rem;
+	}
+}
+
 @media (max-width: 375px) {
 	img {
 		width: 24rem;
@@ -21,7 +32,6 @@
 
 		width: 94%;
 		gap: 1rem;
-		margin: 2rem auto 0;
 		padding: 0.6rem 1.4rem;
 	}
 }

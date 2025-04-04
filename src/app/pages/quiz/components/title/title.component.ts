@@ -4,7 +4,7 @@ import { QuizzesService } from '../../../../services/quizzes.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-	selector: 'app-title',
+	selector: 'quiz-title',
 	imports: [],
 	templateUrl: './title.component.html',
 	styleUrls: ['./title.component.css', './title.component.responsive.css'],

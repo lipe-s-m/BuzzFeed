@@ -4,7 +4,7 @@ import { QuizzesService } from '../../../../services/quizzes.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-	selector: 'app-options',
+	selector: 'quiz-options',
 	imports: [CommonModule],
 	templateUrl: './options.component.html',
 	styleUrls: [
@@ -29,9 +29,16 @@ export class OptionsComponent implements OnInit {
 			this.questionIndex = data.questionIndex;
 			this.options =
 				data.quizzes[this.idQuiz].questions[this.questionIndex].options;
+			this.options = this.embaralharArray(this.options);
 		});
 	}
-
+	private embaralharArray(array: []): [] {
+		for (let i = array.length - 1; i >= 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[array[i], array[j]] = [array[j], array[i]];
+		}
+		return array;
+	}
 	nextQuestion(answer: string): void {
 		this.answers.push(answer);
 
