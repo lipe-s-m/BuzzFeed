@@ -1,3 +1,30 @@
+nav {
+	width: 90%;
+	display: flex;
+	align-content: center;
+	justify-content: flex-end;
+}
+
+a {
+	font-size: 3.2rem;
+	padding: 0.6rem 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover {
+	transition: 200ms;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+hr {
+	width: 100%;
+	margin: -1rem 0 1rem;
+	border: 0.1rem solid;
+	opacity: 0.4;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -5,8 +32,8 @@
 	align-items: center;
 	width: 90%;
 	gap: 1.4rem;
-	margin: 2rem auto 0;
-	padding: 3rem;
+	margin: 1rem auto 0;
+	padding: 0.8rem 1.6rem 3rem;
 }
 
 .component,
