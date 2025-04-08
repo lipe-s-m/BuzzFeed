@@ -39,7 +39,7 @@ input::placeholder {
 	font-weight: 400;
 }
 
-form button {
+.nextSession {
 	align-self: flex-end;
 	margin-right: 2.4rem;
 	padding: 0.8rem 1.8rem;
@@ -49,33 +49,15 @@ form button {
 	background-color: #33853c;
 }
 
-form button:hover {
+.nextSession:hover {
 	transition: 200ms;
 	cursor: pointer;
 	opacity: 0.8;
 }
-
 
 hr {
 	width: 100%;
 	margin: 1rem 0 1rem;
 	border: 0.1rem solid;
 	opacity: 0.4;
-}
-
-.buttonBack {
-	margin: 1rem 0;
-	padding: 0.6rem;
-
-	font-size: 2.4rem;
-	font-weight: 400;
-	background-color: transparent;
-	border: none;
-}
-
-.buttonBack:hover {
-	transition: 200ms;
-	cursor: pointer;
-	color: #81dd54;
-	opacity: 0.8;
 }

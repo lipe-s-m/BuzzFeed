@@ -1,6 +1,20 @@
 <div class="container">
 	<h1>Criar Quiz</h1>
+	<h2 *ngIf="nameQuiz ; else elseSubTitle">{{nameQuiz}}</h2>
+	<ng-template #elseSubTitle>
+		<h2>Verdadeiro ou falso</h2>
+	</ng-template>
 	<hr>
-	<criar-quiz-title class="component" />
+	<criar-quiz-title class="component" *ngIf="nameQuiz.length <= 1 ; else elseBlock" />
+
+	<ng-template #elseBlock>
+		<criar-quiz-questions *ngIf="questions.length <= 1; else resultBlock" class="component" />
+	</ng-template>
+
+	<ng-template #resultBlock>
+		<criar-quiz-result class="component" />
+	</ng-template>
+
+	<button class="buttonBack" (click)="backToHome()">Voltar para a Home</button>
 
 </div>

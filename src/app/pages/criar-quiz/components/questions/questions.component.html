@@ -1,1 +1,62 @@
-<p>questions works!</p>
+<div class="container">
+	<h2>Adicione as questões do seu Quiz!</h2>
+
+	<section *ngFor="let question of questions; let j = index">
+		<div *ngIf="j < questions.length-1; else formulario" class="question-created">
+			<p>Questão {{question.idQuestion+1}}: </p>
+			<p>{{question.titleQuestion}}</p>
+		</div>
+
+		<!-- ultima questao -->
+		<ng-template #formulario>
+
+			<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+				<label for="input-question">
+					<h3>Titulo da Questão</h3>
+				</label>
+				<input type="text" id="input-question" name="titleQuestion" placeholder="Digite aqui..." [(ngModel)]="titleQuestion" required>
+				<hr>
+				<label for="input-options">
+					<h3>Alternativas da Questão</h3>
+				</label>
+
+				<div class="options">
+					<ul>
+						<li *ngFor="let option of questions[idQuestion].options; let i = index">
+							<div *ngIf="i < questions[idQuestion].options.length-1; else elseBlock" class="options__form">
+								<p>Alternativa {{option.idOption}}:
+								</p>
+								<input value="{{option.content}}" class="option-created" [ngClass]="{
+								 'true': option.alias === 'A',
+								 'false': option.alias === 'B'
+							}" disabled>
+							</div>
+							<ng-template #elseBlock>
+								<div class="options__form">
+									<div>
+										<p>Texto da alternativa</p>
+										<input type="text" id="input-options" name="options" placeholder="Digite aqui..." [(ngModel)]="option.content" minlength="1" required>
+									</div>
+									<div>
+										<p>Valor</p>
+										<select id="select-options" name="select-option" [(ngModel)]="option.alias" required>
+											<option value="A">Verdadeiro</option>
+											<option value="B">Falso</option>
+										</select>
+									</div>
+								</div>
+							</ng-template>
+							<hr>
+						</li>
+						<button type="button" class="addOption" (click)="addOption() ">+</button>
+					</ul>
+				</div>
+				<button type="button" class="buttonBack" (click)="addQuestion() ">Adicionar outra questão</button>
+			</form>
+		</ng-template>
+	</section>
+
+	<button type="submit" class="nextSession" (click)="nextSession()">Próximo</button>
+
+
+</div>

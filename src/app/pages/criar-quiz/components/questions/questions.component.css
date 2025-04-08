@@ -1,0 +1,183 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 90%;
+	gap: 2rem;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+hr {
+	width: 100%;
+	margin: 1rem 0 1rem;
+	border: 0.1rem solid;
+	opacity: 0.4;
+}
+
+h2 {
+	font-size: 3.6rem;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 2.8rem;
+	font-weight: 500;
+}
+
+.question-created {
+	display: flex;
+	justify-content: space-around;
+	padding: 1.4rem;
+	gap: 2rem;
+	width: 75%;
+	font-weight: 500;
+	background-color: #2ca820;
+	border-radius: 2rem;
+	border: 0.4rem solid rgba(110, 206, 97, 0.712);
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	width: 75%;
+}
+
+input,
+#select-options,
+option {
+	width: 100%;
+	padding: 1.2rem 1.6rem;
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	background-color: rgba(155, 149, 243, 0.151);
+	border: none;
+	border-radius: 1rem;
+
+}
+
+input::placeholder {
+	color: rgba(255, 255, 255, 0.897);
+	/* text-decoration: underline; */
+	text-decoration-line: underline;
+	text-decoration-color: #ffffff5d;
+	font-weight: 400;
+}
+
+option {
+	background-color: #40307B;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	width: 100%;
+}
+
+.options>ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 1.6rem;
+	list-style: none;
+}
+
+li {
+	width: 100%;
+}
+
+.options hr {
+	width: 90%;
+	margin: 1.4rem auto;
+	opacity: 0.2;
+}
+
+.options__form {
+	display: flex;
+	justify-content: space-around;
+}
+
+p {
+	font-size: 2rem;
+}
+
+
+
+.option-created {
+	width: 70%;
+	padding: 0.4rem 1rem;
+	font-size: 2rem;
+	background-color: #dbc5f0;
+}
+
+.true {
+	background-color: #47961f;
+}
+
+.false {
+	background-color: #a72d28;
+}
+
+.addOption {
+	width: 4rem;
+	padding: 0.2rem 1rem 0.6rem;
+	font-size: 2rem;
+	font-weight: 700;
+	border: none;
+	border-radius: 1rem;
+	background-color: #1F1147;
+}
+
+.nextSession {
+	align-self: flex-end;
+	margin-right: 2.4rem;
+	padding: 0.8rem 1.8rem;
+	font-size: 2.4rem;
+	border: none;
+	border-radius: 0.6rem;
+	background-color: #33853c;
+}
+
+.nextSession:hover {
+	transition: 200ms;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+form button:hover {
+	transition: 200ms;
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.buttonBack {
+	margin: 1rem 0;
+	padding: 0.6rem;
+
+	font-size: 2.4rem;
+	font-weight: 400;
+	background-color: transparent;
+	border: none;
+}
+
+.buttonBack:hover {
+	transition: 200ms;
+	cursor: pointer;
+	color: #81dd54;
+	opacity: 0.8;
+}

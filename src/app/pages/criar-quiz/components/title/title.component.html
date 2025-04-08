@@ -3,11 +3,10 @@
 		<p>Qual o nome do seu Quiz?</p>
 	</label>
 
-	<form>
-		<input type="text" id="input" placeholder="Digite aqui...">
-		<button>Proximo</button>
+	<form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+		<input type="text" id="input" name="nameQuiz" placeholder="Digite aqui..." [(ngModel)]="nameQuiz" required>
+		<button type="submit" class="nextSession">Próximo</button>
 	</form>
 
-	<button class="buttonBack" (click)="backToHome()">Voltar para a Home</button>
 
 </div>
